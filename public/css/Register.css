@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/api/placeholder/1920/1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'phetsarath ot', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.register-container {
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.hotel-logo {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+        width: 120px;
+        height: auto;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:focus {
+        border-color: #8e44ad;
+        box-shadow: 0 0 0 0.2rem rgba(142, 68, 173, 0.25);
+    }
+}
+
+.input-group-text {
+    background-color: transparent;
+    border-left: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #8e44ad;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: #732d91;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4);
+    }
+}
+
+.form-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+
+    a {
+        color: #8e44ad;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #732d91;
+            text-decoration: underline;
+        }
+    }
+}
+
+.password-requirements {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.requirements-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+
+    li {
+        margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 5px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.requirement-met {
+    color: #27ae60;
+}
+
+.requirement-unmet {
+    color: #95a5a6;
+}
+
+.social-register {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+
+    p {
+        color: #666;
+        margin-bottom: 15px;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        &.facebook {
+            background-color: #3b5998;
+        }
+
+        &.google {
+            background-color: #db4437;
+        }
+
+        &.apple {
+            background-color: #000;
+        }
+    }
+}
+
+.form-check {
+    margin-top: 15px;
+
+    .form-check-label {
+        font-size: 0.9rem;
+        color: #666;
+
+        a {
+            color: #8e44ad;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
